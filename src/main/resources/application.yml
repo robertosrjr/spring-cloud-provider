@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /provider-api
+  port: 8081
+
+spring:
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
